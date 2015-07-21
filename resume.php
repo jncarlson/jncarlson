@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Joseph Carlson - Software Engineer</title>
+        <title>Joseph Carlson - Résumé</title>
         <meta name="Joseph Carlson" content="Portfolio & Résumé">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
