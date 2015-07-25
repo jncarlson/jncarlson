@@ -28,11 +28,20 @@ h3{
     margin-bottom: .5em;
 }
 
+.h4title{
+    font-size: 16px;
+}
+
 
 hr {
     background-color: #000;
     height: 1px;
     margin-top: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6em;
 }
 
 a, a:hover, a:active, a:visited {
@@ -92,6 +101,15 @@ a, a:hover, a:active, a:visited {
     margin: auto;
 }
 
+#contact{
+    max-width: 300px;
+    margin: auto;
+}
+
+#contact ul {
+    font-size: 16px;
+    list-style: none;
+}
 
 
 @media screen and (max-width: 760px) {

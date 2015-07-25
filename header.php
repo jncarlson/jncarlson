@@ -5,7 +5,6 @@
     <ul class="p-right">
         <li><a href="resume.php">résumé</a></li>
         <li><a href="portfolio.php">portfolio</a></li>
-        <li><a href="use.php">what i use</a></li>
         <li><a href="contact.php">contact</a></li>
     </ul>
 </div>

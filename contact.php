@@ -18,6 +18,13 @@
     <body>
         <div class="container">
             <?php require 'header.php' ?>
+            <h2>Call, text, email, whatever you prefer.</h2>
+            <div id="contact">
+                <ul>
+                    <li><i style="font-size:25px;" class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp; (385)208-9226</li>
+                    <li><i class="fa fa-envelope-o"></i>&nbsp; joseph.jn.carlson@gmail.com</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
