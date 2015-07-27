@@ -23,6 +23,7 @@
                 <ul>
                     <li><i style="font-size:25px;" class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp; (385)208-9226</li>
                     <li><i class="fa fa-envelope-o"></i>&nbsp; joseph.jn.carlson@gmail.com</li>
+                    <li><i class="fa fa-globe"></i>&nbsp; Springville, UT, 84663</li>
                 </ul>
             </div>
         </div>

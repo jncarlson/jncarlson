@@ -29,7 +29,7 @@
                 <h3>Things I don't do...</h3>
                 <ul>
                     <li>I'm not a designer, I may work <i>with</i> designers.</li>
-                    <li>I'm not a sysadmin. Simple web app deployment? Yes. Complex server configuration? No.</li>
+                    <li>I'm not a sysadmin. Web app deployment? Yes. Complex server configuration? No.</li>
                 </ul>
             </div>
         </div>

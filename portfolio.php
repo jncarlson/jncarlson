@@ -33,7 +33,7 @@
                     and <a target="_blank" href="https://developers.workfront.com/api-docs/api-explorer/">WorkFronts API</a> to integrate the two platforms by syncing billing records, projects,
                     invoices, and a lot of other objects.</p>
                 <h3><strong>Plain Javascript</strong>, Advanced Type-Ahead Search</h3>
-                <p>One of the more popular selling products at Simplus is type-ahead search I built that expands the functionality greatly of
+                <p>One of the more popular selling products at Simplus is type-ahead search I built that expands the functionality of
                     <a target="_blank" href="https://select2.github.io/">Select2</a>. It has the added ability to filter
                 by option group and return child objects, and filtering by child objects returns parent object. It's used
                     as an embedded page into workfront to copy any form value (that may have thousands of options) into any
@@ -48,6 +48,13 @@
                 <p>I made this script that can be uploaded into WordPress as a plugin and then used to auto-deploy over 30 different types of
                 WordPress blogs. It formats everything into JSON array's and uses WordPress's native commands to insert the data in the correct
                 fields. This script reduced the time to deploy a new blog from an average of 35 minutes, to an average of 6 minutes.</p>
+                <h3><strong>Wordpress/Magento CMS</strong>, Custom Builds</h3>
+                <p>
+                    Okay, so I do know a <i>little</i> design. But it's not my preference. I designed and developed
+                    <a target="_blank" href="http://bethanywiggins.com/">BethanyWiggins</a>, a portfolio website for a local young adult
+                    author, and <a href="http://www.tinyblessings.com/">TinyBlessings</a>, a magento ecommerce site with the target
+                    audience being grandparents.
+                </p>
             </div>
         </div>
     </body>
