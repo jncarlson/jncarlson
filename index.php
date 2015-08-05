@@ -24,7 +24,7 @@
                 <ul>
                     <li>I write HTML, CSS, and client side Javascript. I am familiar with frameworks like <a target="_blank" href="https://angularjs.org/">AngularJS </a>&
                         <a target="_blank" href="http://getbootstrap.com/">Bootstrap 3</a>.</li>
-                    <li>I also write PHP and design databases in SQL. I program content management systems, APIs, and custom applications. I am also familiar <a target="_blank" href="http://laravel.com/">Laravel</a>.</li>
+                    <li>I also write PHP and design databases in SQL. I program content management systems, APIs, and custom applications. I am also familiar with <a target="_blank" href="http://laravel.com/">Laravel</a>.</li>
                 </ul>
                 <h3>Things I don't do...</h3>
                 <ul>
@@ -33,6 +33,7 @@
                 </ul>
             </div>
         </div>
+
     </body>
 </html>
 
