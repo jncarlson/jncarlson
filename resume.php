@@ -24,8 +24,17 @@
                 <ul>
                     <li>Custom Wordpress builds</li>
                     <li>Zend front-end for <a target="_blank" href="https://www.itemexperts.com/">Item Experts</a> CMS</li>
+                    <li>Product rating, courses, questionnaire system for <a target="_blank" href="http://www.skullcandy.com/">Skullcandy</a></li>
                 </ul>
-                <h3><strong>2014 - Present:</strong> SaaS Web Application Developer, <a target="_blank" href="https://www.simplus.com/">Simplus</a></h3>
+                <h3><strong>2015 - Present:</strong> Sr. Full Stack Developer, <a target="_blank" href="http://www.visionsolar.com/">Vision Solar</a></h3>
+                <ul>
+                    <li>Work directly with Creative Director and VP of Operations to consult and implement technical solutions to complex business problems.</li>
+                    <li>Refactored legacy code and architected new applications</li>
+                    <li>Established modern git and staging development workflow with current best practices.</li>
+                    <li>Integrated dozens of external services and API’s like  <a target="_blank" href="https://developers.google.com/maps/?hl=en">Google Maps</a>, <a target="_blank" href="https://www.twilio.com/api">Twilio</a>, <a target="_blank" href="https://mandrillapp.com/api/docs/">Mandrill</a>, <a target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/">Salesforce</a> and others.</li>
+                    <li>Designed and configured database structure, coded SQL factory and query builder, architected and coded PHP backend</li>
+                </ul>
+                <h3><strong>2014 - 2015:</strong> SaaS Web Application Developer, <a target="_blank" href="https://www.simplus.com/">Simplus</a></h3>
                 <ul>
                     <li>Scrum-based project workfow</li>
                     <li>Develop apps like <a target="_blank" href="https://www.simplus.com/workfront/products/custom/">Email+, Cast+, Type-Ahead,</a> and <a target="_blank" href="https://www.simplus.com/workfront/products/quickbooks/">Workfront + Quickbooks</a></li>
