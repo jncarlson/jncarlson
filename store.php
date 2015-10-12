@@ -25,7 +25,7 @@
         <form action="" method="POST">
         <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="pk_live_tQPz6fuDtVEigmR5LFdWAqP5"
+            data-key="pk_test_tQPz6fuDtVEigmR5LFdWAqP5"
             data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
             data-name="TSheets to Domo Sync"
             data-description="Basic Subscription ($10.00/month)"
