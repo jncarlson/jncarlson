@@ -19,15 +19,17 @@
     <div class="container">
         <?php require 'header.php' ?>
         <form action="" method="POST">
-          <script
+        <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="pk_live_tQPz6fuDtVEigmR5LFdWAqP5"
-            data-amount="2000"
-            data-name="Demo Site"
-            data-description="2 widgets ($20.00)"
-            data-image="/128x128.png"
-            data-locale="auto">
-          </script>
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-name="TSheets to Domo Sync"
+            data-description="Basic Subscription ($10.00/month)"
+            data-panel-label="Subscribe"
+            data-label="Subscribe"
+            data-amount="1000"
+            data-allow-remember-me="false">
+        </script>
         </form>
     </div><!--/.container-->
     </body>
