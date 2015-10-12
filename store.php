@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">.
+
 
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,6 +19,7 @@
     <body>
     <div class="container">
         <?php require 'header.php' ?>
+        <div id="resume">
         <form action="" method="POST">
         <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -31,6 +33,7 @@
             data-allow-remember-me="false">
         </script>
         </form>
+        </div>
     </div><!--/.container-->
     </body>
 </html>
