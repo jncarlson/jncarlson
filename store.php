@@ -19,7 +19,9 @@
     <body>
     <div class="container">
         <?php require 'header.php' ?>
+        <h2>Subscriptions.</h2>
         <div id="resume">
+        <h3>TSheets to Domo Sync</h3>
         <form action="" method="POST">
         <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
