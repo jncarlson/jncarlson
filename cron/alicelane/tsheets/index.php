@@ -22,6 +22,6 @@ foreach($result['results']['payroll_report'] as $report)
     array_push($masterArray, $report);
 }
 
-echo '<pre>';
-    print_r(json_encode($masterArray, JSON_PRETTY_PRINT));
-echo '</pre>';
+
+print_r(json_encode($masterArray, JSON_PRETTY_PRINT));
+
