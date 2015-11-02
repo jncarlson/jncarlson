@@ -70,7 +70,7 @@ foreach ($array as $timesheet)
     $timesheet['client_name'] = $jobName;
     $timesheet['user_name'] = $name;
     $timesheet['timesheet_id'] = $timesheet['id'];
-    $timesheet['duration'] = gmdate("H:i:s", $timesheet['duration']);
+    $timesheet['duration'] = $timesheet['duration'] / 60 / 60;
     unset($timesheet['id']);
     unset($timesheet['tz']);
     unset($timesheet['tz_str']);
