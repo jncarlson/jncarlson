@@ -4,7 +4,7 @@ include_once('tsheets_api/tsheets.inc.php');
 date_default_timezone_set ('America/Denver');
 
 $currentDate = date('Y-m-d');
-$hour_ago = strtotime('-1 day');
+$hour_ago = strtotime('-45 day');
 $time = date('Y-m-d', $hour_ago);
 
 $tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327e2');
@@ -13,70 +13,83 @@ $tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327
 //            'end_date' => $currentDate));
 
 
-$timesheet = $tsheets->get(ObjectType::Timesheets, array('start_date' => $time,
-    'end_date' => $currentDate));
-
-$array = $timesheet['results']['timesheets'];
-
-$idsArray = array();
-$jobcodeArray = array();
-
-foreach ($array as $timesheet)
-{
-    array_push($idsArray, $timesheet['user_id']);
-    array_push($jobcodeArray, $timesheet['jobcode_id']);
-}
-
-$ids = implode(', ', $idsArray);
-$jobs = implode(', ', $jobcodeArray);
-
-
-$users = $tsheets->get(ObjectType::Users, array('ids' => $ids));
-$jobCodes = $tsheets->get(ObjectType::Jobcodes, array('ids' => $jobs));
-
-
-
 $timesheetArray = array();
-foreach ($array as $timesheet)
+for ($i = 0; $i < 100; $i++)
 {
+    $pageNumber = $i + 1;
+    $timesheet = $tsheets->get(ObjectType::Timesheets, array('start_date' => $time,
+                                                            'end_date' => $currentDate,
+                                                            'page' => $pageNumber));
 
-    foreach ($users['results']['users'] as $id)
+    if (count($timesheet['results']['timesheets']) == 0)
     {
-        if ($id['id'] == $timesheet['user_id'])
+        break;
+    }
+
+    $array = $timesheet['results']['timesheets'];
+
+    $idsArray = array();
+    $jobcodeArray = array();
+
+    foreach ($array as $timesheet)
+    {
+        array_push($idsArray, $timesheet['user_id']);
+        array_push($jobcodeArray, $timesheet['jobcode_id']);
+    }
+
+    $ids = implode(', ', $idsArray);
+    $jobs = implode(', ', $jobcodeArray);
+
+
+    $users = $tsheets->get(ObjectType::Users, array('ids' => $ids));
+    $jobCodes = $tsheets->get(ObjectType::Jobcodes, array('ids' => $jobs));
+
+
+
+
+    foreach ($array as $timesheet)
+    {
+
+        foreach ($users['results']['users'] as $id)
         {
-            $name = $id['first_name'] . ' ' . $id['last_name'];
-            $group_id = $id['group_id'];
+            if ($id['id'] == $timesheet['user_id'])
+            {
+                $name = $id['first_name'] . ' ' . $id['last_name'];
+                $group_id = $id['group_id'];
+            }
         }
-    }
 
-    if ($group_id == "75142")
-    {
-        $group_name = "Designer";
-    }
-    else if ($group_id == "75434")
-    {
-       $group_id = "Administrative";
-    }
-
-    $jobName = "none";
-    foreach ($jobCodes['results']['jobcodes'] as $jobCode)
-    {
-        if ($jobCode['id'] == $timesheet['jobcode_id'])
+        if ($group_id == "75142")
         {
-            $jobName = $jobCode['name'];
+            $group_name = "Designer";
         }
+        else if ($group_id == "75434")
+        {
+            $group_id = "Administrative";
+        }
+
+        $jobName = "none";
+        foreach ($jobCodes['results']['jobcodes'] as $jobCode)
+        {
+            if ($jobCode['id'] == $timesheet['jobcode_id'])
+            {
+                $jobName = $jobCode['name'];
+            }
+        }
+
+        $timesheet['client_name'] = $jobName;
+        $timesheet['user_name'] = $name;
+        $timesheet['timesheet_id'] = $timesheet['id'];
+        $timesheet['duration'] = $timesheet['duration'] / 60 / 60;
+        unset($timesheet['id']);
+        unset($timesheet['tz']);
+        unset($timesheet['tz_str']);
+        array_push($timesheetArray, $timesheet);
     }
 
-    $timesheet['client_name'] = $jobName;
-    $timesheet['user_name'] = $name;
-    $timesheet['timesheet_id'] = $timesheet['id'];
-    $timesheet['duration'] = $timesheet['duration'] / 60 / 60;
-    unset($timesheet['id']);
-    unset($timesheet['tz']);
-    unset($timesheet['tz_str']);
-    array_push($timesheetArray, $timesheet);
+
+
 }
-
 
 print_r(json_encode($timesheetArray, JSON_PRETTY_PRINT));
 
