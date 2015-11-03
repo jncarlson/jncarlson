@@ -4,7 +4,7 @@ include_once('tsheets_api/tsheets.inc.php');
 date_default_timezone_set ('America/Denver');
 
 $currentDate = date('Y-m-d');
-$hour_ago = strtotime('-45 day');
+$hour_ago = strtotime('-1 day');
 $time = date('Y-m-d', $hour_ago);
 
 $tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327e2');
@@ -67,6 +67,10 @@ for ($i = 0; $i < 100; $i++)
         {
             $group_name = "Administrative";
         }
+        else if ($group_id == "193118")
+        {
+            $group_name = "Warehouse";
+        }
 
         $jobName = "none";
         foreach ($jobCodes['results']['jobcodes'] as $jobCode)
@@ -77,7 +81,7 @@ for ($i = 0; $i < 100; $i++)
             }
         }
 
-        $timesheet['group_id'] = $group_id;
+        $timesheet['group_name'] = $group_name;
         $timesheet['client_name'] = $jobName;
         $timesheet['user_name'] = $name;
         $timesheet['timesheet_id'] = $timesheet['id'];
