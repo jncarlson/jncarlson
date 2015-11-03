@@ -4,7 +4,7 @@ include_once('tsheets_api/tsheets.inc.php');
 date_default_timezone_set ('America/Denver');
 
 $currentDate = date('Y-m-d');
-$hour_ago = strtotime('-45 day');
+$hour_ago = strtotime('-1 day');
 $time = date('Y-m-d', $hour_ago);
 
 $tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327e2');
@@ -65,7 +65,7 @@ for ($i = 0; $i < 100; $i++)
         }
         else if ($group_id == "75434")
         {
-            $group_id = "Administrative";
+            $group_name = "Administrative";
         }
 
         $jobName = "none";
