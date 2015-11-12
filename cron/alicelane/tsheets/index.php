@@ -5,7 +5,7 @@ date_default_timezone_set ('America/Denver');
 
 $currentDate = date('Y-m-d');
 $hour_ago = strtotime('-1 day');
-$time = date('Y-m-d', $hour_ago);
+$time = date('c', $hour_ago);
 
 $tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327e2');
 //$result = $tsheets->get_report(ReportType::Timesheets,
@@ -17,8 +17,7 @@ $timesheetArray = array();
 for ($i = 0; $i < 100; $i++)
 {
     $pageNumber = $i + 1;
-    $timesheet = $tsheets->get(ObjectType::Timesheets, array('start_date' => $time,
-                                                            'end_date' => $currentDate,
+    $timesheet = $tsheets->get(ObjectType::Timesheets, array('modified_since' => $time,
                                                             'page' => $pageNumber));
 
     if (count($timesheet['results']['timesheets']) == 0)
