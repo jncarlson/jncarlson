@@ -20,6 +20,16 @@ for ($i = 0; $i < 100; $i++)
     $timesheet = $tsheets->get(ObjectType::Timesheets, array('modified_since' => $time,
                                                             'page' => $pageNumber));
 
+    $timesheetDeleted = $tsheets->get(ObjectType::TimesheetsDeleted, array('modified_since' => $time,
+                                                                        'page' => $pageNumber));
+
+    foreach ($timesheetDeleted['results']['timesheets_deleted'] as $deleted)
+    {
+        $deleted['deleted'] = "true";
+        $deleted['duration'] = 0;
+        array_push($timesheet['results']['timesheets'], $deleted);
+    }
+
     if (count($timesheet['results']['timesheets']) == 0)
     {
         break;
@@ -56,6 +66,11 @@ for ($i = 0; $i < 100; $i++)
                 $name = $id['first_name'] . ' ' . $id['last_name'];
                 $group_id = $id['group_id'];
             }
+        }
+
+        if (!isset($timesheet['deleted']))
+        {
+            $timesheet['deleted'] = 'false';
         }
 
         if ($group_id == "75142")
