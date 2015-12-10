@@ -7,7 +7,7 @@ $currentDate = date('Y-m-d');
 $hour_ago = strtotime('-1 day');
 $time = date('c', $hour_ago);
 
-$tsheets = new TSheetsRestClient(1, 'S.1__ffdd498faeec5de632b5729eb5164321464327e2');
+$tsheets = new TSheetsRestClient(1, 'S.1__077e97bad6c2d4a2f315228fe10c71dda352b774');
 //$result = $tsheets->get_report(ReportType::Timesheets,
 //    array('start_date' => '2015-9-20',
 //            'end_date' => $currentDate));
