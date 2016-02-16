@@ -4,7 +4,7 @@ include_once('tsheets_api/tsheets.inc.php');
 date_default_timezone_set ('America/Denver');
 
 $currentDate = date('Y-m-d');
-$hour_ago = strtotime('-1 day');
+$hour_ago = strtotime('-5 day');
 $time = date('c', $hour_ago);
 
 $tsheets = new TSheetsRestClient(1, 'S.1__077e97bad6c2d4a2f315228fe10c71dda352b774');
