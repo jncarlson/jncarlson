@@ -22,13 +22,17 @@
             <h4 class="h4title" align="center"><i class="fa fa-github"></i> If you're looking for code samples, visit my <a
                     target="_blank" href="https://github.com/jncarlson">GitHub account.</a></h4>
             <div id="resume">
-                <h3><strong>AngularJS, Javascript, PHP, SQL, HTML/CSS</strong>, <a target="_blank" href="http://bluebaron.net/#/overview/26137346/na">BlueBaron.net</a>.</h3>
-                    <p>This is an application I own that I built in my free time. It uses AngularJS, Bootstrap, and Chartsjs.org for the front-end and a custom made API in PHP for the back-end. The
-                       app also works closely with <a target="_blank" href="https://developer.riotgames.com/">Riots API</a> in order
-                        to fetch important data for a players account. There have been over half a million unique visitors
-                        and over 200 thousand accounts made. It's also the <a target="_blank"
-                            href="https://www.reddit.com/r/summonerschool/comments/2x43l1/i_made_a_website_that_shows_summoners_exactly/">top post of all time on the league of legends subreddit.</a></p>
-                <h3><strong>PHP</strong>, <a target="_blank" href="https://www.simplus.com/workfront/products/quickbooks/">Workfront + Quickbooks</a></h3>
+                <h3><strong>AngularJS, PHP</strong>, <a target="_blank" href="http://bluebaron.net/#/profile/492066/na">BlueBaron.net</a>.</h3>
+                    <p>This is a fun project I built in my free time. It has recently been acquired by a large gaming network called
+                        <a href="https://gamurs.com/">GAMURS</a>. I now am working with them to make updates and help integrate
+                        the code into their platform. It uses <a target="_blank" href="https://angularjs.org/">angularJS</a> front-end to display
+                        a players profile in a sleek and meaningful way. It works closely with <a target="_blank" href="https://developer.riotgames.com/">Riots API</a> in order
+                        to fetch important data for a players account. There have been over half a million unique visitors with hundreds of thousands of
+                        registered accounts. It averages around 5k unique visitors a day. It was the <a target="_blank"
+                            href="https://www.reddit.com/r/summonerschool/comments/2x43l1/i_made_a_website_that_shows_summoners_exactly/">top post of all time on the league of legends subreddit</a>
+                        and is considered to be one of the most advanced player profile tool for league of legends.</p>
+
+                <h3><strong>PHP</strong>, <a target="_blank" href="https://www.simplus.com/">Workfront + Quickbooks</a></h3>
                 <p>Simplus's Workfront + Quickbooks product is an application that uses <a target="_blank" href="https://developer.intuit.com/apiexplorer?apiname=V3QBO">Quickbooks Online API</a>
                     and <a target="_blank" href="https://developers.workfront.com/api-docs/api-explorer/">WorkFronts API</a> to integrate the two platforms by syncing billing records, projects,
                     invoices, and a lot of other objects.</p>

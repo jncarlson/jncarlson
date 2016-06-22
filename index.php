@@ -22,18 +22,17 @@
             <div id="resume">
                 <h3>Some things I do...</h3>
                 <ul>
-                    <li>I write HTML, CSS, and client side Javascript. I am familiar with frameworks like <a target="_blank" href="https://angularjs.org/">AngularJS </a>&
+                    <li>I write HTML, CSS, and client side Javascript. I am experienced with frameworks like <a target="_blank" href="https://angularjs.org/">AngularJS </a>&
                         <a target="_blank" href="http://getbootstrap.com/">Bootstrap 3</a>.</li>
                     <li>I also write PHP and design databases in SQL. I program content management systems, APIs, and custom applications. I am also familiar with <a target="_blank" href="http://laravel.com/">Laravel</a>.</li>
                 </ul>
                 <h3>Things I don't do...</h3>
                 <ul>
-                    <li>I'm not a designer, I may work <i>with</i> designers.</li>
+                    <li>I'm not an illustrator, industry standard application design? Yes. Custom graphics and illustrations? No.</li>
                     <li>I'm not a sysadmin. Web app deployment? Yes. Complex server configuration? No.</li>
                 </ul>
             </div>
         </div>
-
     </body>
 </html>
 

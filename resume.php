@@ -19,12 +19,16 @@
         <div class="container">
             <?php require 'header.php' ?>
             <h2>Experience</h2>
+            <div id="resume" style="font-size: 16px;">
+                <i>"Thanks for bringing Joseph on, he has really been great to work with and tremendously helpful in solving
+                    these problems."</i> - Yohan, Lead Developer, Skullcandy
+            </div>
             <div id="resume">
                 <h3><strong>2013 - Present:</strong> Freelance Web Developer</h3>
                 <ul>
-                    <li>Custom Wordpress builds</li>
-                    <li>Zend front-end for <a target="_blank" href="https://www.itemexperts.com/">Item Experts</a> CMS</li>
                     <li>Product rating, courses, questionnaire system for <a target="_blank" href="http://www.skullcandy.com/">Skullcandy</a></li>
+                    <li>Custom display auditing software and management system for <a target="_blank" href="http://www.skullcandy.com/">Skullcandy</a></li>
+                    <li>Zend front-end for <a target="_blank" href="https://www.itemexperts.com/">Item Experts</a> CMS</li>
                 </ul>
                 <h3><strong>2015 - Present:</strong> Sr. Full Stack Developer, <a target="_blank" href="http://www.visionsolar.com/">Vision Solar</a></h3>
                 <ul>
@@ -37,7 +41,7 @@
                 <h3><strong>2014 - 2015:</strong> SaaS Web Application Developer, <a target="_blank" href="https://www.simplus.com/">Simplus</a></h3>
                 <ul>
                     <li>Scrum-based project workfow</li>
-                    <li>Develop apps like <a target="_blank" href="https://www.simplus.com/workfront/products/custom/">Email+, Cast+, Type-Ahead,</a> and <a target="_blank" href="https://www.simplus.com/workfront/products/quickbooks/">Workfront + Quickbooks</a></li>
+                    <li>Develop apps like <a target="_blank" href="https://www.simplus.com/">Email+, Cast+, Type-Ahead,</a> and <a target="_blank" href="https://www.simplus.com/">Workfront + Quickbooks</a></li>
                     <li>Dozens of SaaS integrations using Workfront's <a target="_blank" href="https://developers.workfront.com/api-docs/api-explorer/">highly configurable API</a></li>
                     <li>Trusted with clients like Nike, DeviantArt, VistaPrint, Xactware, and others</li>
                     <li>Custom application builds using Laravel and AngularJS</li>
@@ -62,7 +66,7 @@
             <div id="resume">
                 <ul>
                     <li>2009: AS <a target="_blank" href="http://www.uvu.edu/csh/">Science</a>, Utah Valley University</li>
-                    <li>expected 2017: BA <a target="_blank" href="https://www.uvu.edu/dgm/pages/programs/internet.html">Web & Application Development</a>, Utah Valley University</li>
+                    <li>1 year: BA <a target="_blank" href="https://www.uvu.edu/dgm/pages/programs/internet.html">Web & Application Development</a>, Utah Valley University</li>
                 </ul>
             </div>
         </div><!--/.container-->
